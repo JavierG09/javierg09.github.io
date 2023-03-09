@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae JFG</title>
+    <link rel="icon" type="image/x-icon" href="Imágenes\Imagen para cv.jpg">
+     <!-- Open Graph data -->
+ <meta property="og:title" content="Curriculum Vitae JFG" />
+ <meta property="og:type" content="Curriculum Vitae" />
+ <meta property="og:url" content=" http://www.example.com" />
+ <meta property="og:image" content=" https://randomuser.me/api/portraits/men/29.jpg" />
+ <meta property="og:description" content="Curriculum Vitae de Javier Francisco Garcia" />
+ <link rel="stylesheet" type="text/css" href="css\estilos.css" />
+ <!--(poner aca la url una vez definida, probar que se vea bien con facebook debugger)-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/aeee18ebd1.js" crossorigin="anonymous"></script>
+ 
+</head>
+  
+<body>
+    <script src="function.js"></script>
+    
+    <header>
+        <h1>Javier Francisco García</h1>
+    </header>
+
+    <nav>
+        <span>
+            <table>
+                <tbody>
+                <tr>
+                <td>&nbsp;<a href="#objet">Objetivos</a></td>
+                <td>&nbsp;<a href="#experiencia">Experiencia Laboral</a></td>
+                <td>&nbsp;<a href="#formacion">Formación Académica</a></td>
+                <td>&nbsp;<a href="#contacto">Contacto</a></td>
+                <td>&nbsp;<a href="#personal">Información Personal</a></td>
+                <td>&nbsp;<a href="#referencias">Referencias Laborales</a></td>
+                </tr>
+                </tbody>
+                </table>
+
+        </span>
+            
+    </nav>
+
+    <main>
+        <a name="objet"></a>
+    <h2 class="estaesmiclase5">Objetivos</h2>
+        <p>Desarrollo profesional constante con la posibilidad de radicarme en el partido de la costa.</p>
+
+    <a name="experiencia"></a>
+    <h2 class="estaesmiclase5">Experiencia Laboral</h2>
+        <h5 class="estaesmiclase2">06/19-05/21</h5>
+        <h4 class="estaesmiclase1">Bioquímico de guardia</h4>
+        <p class="estaesmiclase3">Sanatorio de la Trinidad, sede Ramos Mejía.</p>
+        <h5 class="estaesmiclase2">06/16-05/19</h5>
+        <h4 class="estaesmiclase1">Residente en Bioquímica Clínica</h4>
+        <p class="estaesmiclase3">Hospital de Clíncas José de San Martín.</p>
+        <h5 class="estaesmiclase2">05/20-02/21</h5>
+        <h4 class="estaesmiclase1">Bioquímico</h4>
+        <p class="estaesmiclase3">Inmunología y Virología Clínica, Hospital de Clíncas José de San Martín.</p>
+        <h5 class="estaesmiclase2">03/21-02/23</h5>
+        <h4 class="estaesmiclase1">Bioquímico</h4>
+        <p class="estaesmiclase3">Laboratorio Gloria Sanchez, Santa Cruz.</p>
+
+    <a name="formacion"></a>
+    <h2 class="estaesmiclase5">Formación Académica</h2>
+        <h3 class="estaesmiclase4">PREUNIVERSITARIOS</h3>
+        <ul class="estaesmiclase3">
+            <li>Colegio San José Obrero: Economía y Gestión de las Organizaciones.</li>
+            <li>Instituto de inglés Steps: Upper Intermediate - First Certificate in English.</li>
+        </ul>
+        <h3 class="estaesmiclase4">UNIVERSITARIOS</h3>
+        <ul class="estaesmiclase3">
+            <li>Bioquímico: Universidad de Buenos Aires (promedio 8,73).</li>
+        </ul>
+        <h3 class="estaesmiclase4">POSGRADO</h3>
+        <ul class="estaesmiclase3">
+            <li>Especialidad en Bacteriología Clinica, Universidad de Buenos Aires.</li>
+            <li>Residencia Bioquímica Clínica, Universidad de Buenos Aires.</li>
+        </ul>
+    </main>  
+    
+    <section>
+
+        <figure> 
+            <img src="Imágenes\Imagen para cv.jpg" alt="Foto de presentación CV Javier Garcia" class="ImgRedonda" id="demo" style="display:none">
+        </figure>
+
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">¡Conoceme!</button>
+
+        <!--No logré derivarlo a la hoja de js "error en consola:function.js:1 Uncaught TypeError: Cannot set properties of null (setting 'onclick')
+    at function.js:1:42"-->
+
+        <a name="contacto"></a>        
+    <h2>Contacto</h2>
+        <p id="tel"> <i class="fa-brands fa-whatsapp"></i> 1165231669.</p>
+        <button type="button" onclick='document.getElementById("tel").innerHTML = "2974853130"'>Teléfono fijo</button>
+    <!--No logré derivarlo a la hoja de js "error en consola:.Uncaught SyntaxError: missing ) after argument list-->
+        <p> <i class="fa-solid fa-envelope"></i> javi_g@live.com.ar.</p>
+
+        <a name="personal"></a>
+    <h2>Información Personal</h2>
+        <ul>
+            <li>32 años</li>
+            <li>Licencia de Conducir.</li>
+            <li>Vehículo propio.</li>
+        </ul>
+
+    <a name="referencias"></a>
+    <h2>Referencias Laborales</h2>
+        <ul>
+            <li>Roberto Pereyra, Sanatroio Trinidad Ramos Mejía. robeper@gmail.com</li>
+            <li>Claudia Gonzalez, Hospital de Clínicas. cgonz@hotmail.com</li>
+            <li>Omar Sanchez, Hospital de Clínicas. OSanch@gmail.com</li>
+            <li>Enzo Diaz, Laboratorio Gloria Sanchez. enzod@gmail.com</li>
+        </ul>
+    </section>
+</body>
+</html>
